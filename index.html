@@ -1,345 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MAMB — Museo de Arte Moderno de Barranquilla</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAMB — Museo de Arte Moderno de Barranquilla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <a href="#inicio" class="nav-logo">
-    MAMB <span class="badge">Barranquilla</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#artista">Artista Destacado</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#descargar">Descargar</a></li>
-  </ul>
-  <a href="#descargar" class="nav-cta">Descargar App</a>
-</nav>
+  <nav id="navbar">
+    <a href="#inicio" class="nav-logo">
+      MAMB <span class="badge">Barranquilla</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#artista">Artista Destacado</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#descargar">Descargar</a></li>
+    </ul>
+    <a href="#descargar" class="nav-cta">Descargar App</a>
+  </nav>
 
-<!-- HERO -->
-<section id="inicio">
-  <div class="hero-left fade-up">
-    <span class="hero-eyebrow">Museo de Arte Moderno</span>
-    <h1 class="hero-title">
-      Arte que<br><em>transforma</em><br>el espíritu
-    </h1>
-    <p class="hero-desc">
-      Un espacio donde la cultura caribeña dialoga con el arte contemporáneo global. Colecciones únicas, exposiciones temporales y experiencias que perduran.
-    </p>
-    <div class="hero-actions">
-      <a href="#artista" class="btn-primary">Explorar Colección</a>
-      <a href="#descargar" class="btn-ghost">
-        Descargar App
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 8h10M9 4l4 4-4 4"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="hero-art-grid">
-      <div class="art-panel art-p1">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#7A5030 0%,#4A2E10 100%);display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 80 80" width="60" fill="rgba(250,247,242,0.15)"><rect x="10" y="10" width="60" height="60" rx="2"/><circle cx="30" cy="30" r="10"/><path d="M10 55 L30 35 L50 50 L65 38 L70 45 V70 H10Z"/></svg>
-        </div>
-      </div>
-      <div class="art-panel art-p2">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#5A3C1C 0%,#9A7040 100%);display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 80 80" width="55" fill="rgba(250,247,242,0.12)"><polygon points="40,5 75,65 5,65"/><circle cx="40" cy="42" r="12" fill="none" stroke="rgba(250,247,242,0.2)" stroke-width="2"/></svg>
-        </div>
-      </div>
-      <div class="art-panel art-p3">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#8B6035 0%,#3E2810 100%);display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 80 80" width="55" fill="rgba(250,247,242,0.12)"><rect x="5" y="5" width="70" height="70" rx="35"/><path d="M20 40 Q40 15 60 40 Q40 65 20 40Z" fill="rgba(250,247,242,0.1)"/></svg>
-        </div>
-      </div>
-      <div class="art-panel art-p4">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#3C2408 0%,#7A5828 100%);display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 80 80" width="55" fill="none" stroke="rgba(250,247,242,0.15)" stroke-width="2"><line x1="10" y1="40" x2="70" y2="40"/><line x1="40" y1="10" x2="40" y2="70"/><circle cx="40" cy="40" r="25"/><circle cx="40" cy="40" r="12"/></svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">1.200+</span>
-        <span class="stat-label">Obras</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">38</span>
-        <span class="stat-label">Artistas</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">1969</span>
-        <span class="stat-label">Fundado</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ARTISTA DESTACADO -->
-<section id="artista">
-  <div class="section-label fade-up">Artista Destacado</div>
-  <h2 class="section-title fade-up">La voz del Caribe<br>en el lienzo</h2>
-
-  <div class="artist-layout fade-up">
-    <div class="artist-portrait">
-      <div class="portrait-frame">
-        <div class="portrait-placeholder">
-          <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="40" cy="30" r="22" fill="rgba(250,247,242,0.3)"/>
-            <ellipse cx="40" cy="80" rx="35" ry="28" fill="rgba(250,247,242,0.3)"/>
+  <section id="inicio">
+    <div class="hero-left fade-up">
+      <span class="hero-eyebrow">Museo de Arte Moderno</span>
+      <h1 class="hero-title">
+        Arte que<br><em>transforma</em><br>el espíritu
+      </h1>
+      <p class="hero-desc">
+        Un espacio donde la cultura caribeña dialoga con el arte contemporáneo global. Colecciones únicas, exposiciones temporales y experiencias que perduran.
+      </p>
+      <div class="hero-actions">
+        <a href="#artista" class="btn-primary">Explorar Colección</a>
+        <a href="#descargar" class="btn-ghost">
+          Descargar App
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
           </svg>
-        </div>
-      </div>
-      <div class="portrait-name-overlay">
-        <h3>Alejandra Mora</h3>
-        <span>Pintura · Escultura · Barranquilla</span>
-      </div>
-      <div class="accent-block"></div>
-    </div>
-
-    <div class="artist-info">
-      <blockquote class="artist-quote">
-        "El Caribe no es solo un lugar geográfico — es un estado del alma que habita en cada trazo."
-      </blockquote>
-      <p class="artist-bio">
-        Reconocida como una de las voces más originales del arte contemporáneo colombiano, Alejandra Mora crea obras que tejen identidad caribeña con abstracción moderna. Sus piezas han viajado por museos de Bogotá, Miami y São Paulo, pero siempre regresan a las raíces de la ciudad que las inspiró.
-      </p>
-      <p class="artist-bio">
-        La exposición actual presenta 24 obras inéditas creadas durante su residencia en el MAMB, explorando la relación entre el agua, el color y la memoria colectiva de la costa atlántica colombiana.
-      </p>
-      <div class="artist-tags">
-        <span class="tag">Abstracción</span>
-        <span class="tag">Arte Caribeño</span>
-        <span class="tag">Identidad</span>
-        <span class="tag">Técnica Mixta</span>
-        <span class="tag">2025</span>
-      </div>
-      <a href="#" class="btn-primary">Ver Exposición Completa</a>
-    </div>
-  </div>
-</section>
-
-<!-- GALERÍA VISUAL -->
-<section id="galeria" style="padding-top:0;background:var(--white);">
-  <div style="padding:6rem 5rem 0;">
-    <div class="section-label fade-up">Galería</div>
-    <h2 class="section-title fade-up">Explorar la colección</h2>
-  </div>
-  <div style="padding:0 5rem 6rem;">
-    <div class="gallery-grid fade-up">
-      <div class="g-cell">
-        <div class="g-bg g-bg-1">I</div>
-        <div class="g-overlay"><span>Serie Atlántico · 2024</span></div>
-      </div>
-      <div class="g-cell">
-        <div class="g-bg g-bg-2">II</div>
-        <div class="g-overlay"><span>Raíces · 2023</span></div>
-      </div>
-      <div class="g-cell">
-        <div class="g-bg g-bg-3">III</div>
-        <div class="g-overlay"><span>Memoria Viva · 2022</span></div>
-      </div>
-      <div class="g-cell">
-        <div class="g-bg g-bg-4">IV</div>
-        <div class="g-overlay"><span>Movimiento · 2024</span></div>
-      </div>
-      <div class="g-cell">
-        <div class="g-bg g-bg-5">V</div>
-        <div class="g-overlay"><span>Permanencia · 2025</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label fade-up">About · Nosotros</div>
-  <h2 class="section-title fade-up">Un siglo de arte<br>y cultura viva</h2>
-
-  <div class="about-grid fade-up">
-    <div class="about-text">
-      <p>
-        El Museo de Arte Moderno de Barranquilla nació en 1969 con una misión clara: ser el hogar del arte moderno y contemporáneo en la Costa Caribe colombiana. Desde sus salas conviven obras de maestros nacionales e internacionales con propuestas emergentes de nuevas generaciones de artistas.
-      </p>
-      <p>
-        Ubicados en el corazón cultural de Barranquilla, somos un punto de encuentro entre la tradición y la vanguardia, entre lo local y lo universal. Cada visita es una invitación a reimaginar el mundo desde la perspectiva del arte.
-      </p>
-      <p>
-        Nuestros programas educativos, talleres y eventos conectan a más de 80.000 personas al año con el arte como herramienta de transformación social y cultural.
-      </p>
-
-      <div class="schedule-grid">
-        <div class="schedule-item">
-          <div class="sch-day">Mar — Vie</div>
-          <div class="sch-time">9:00 — 17:00</div>
-        </div>
-        <div class="schedule-item">
-          <div class="sch-day">Sábado</div>
-          <div class="sch-time">10:00 — 18:00</div>
-        </div>
-        <div class="schedule-item">
-          <div class="sch-day">Domingo</div>
-          <div class="sch-time">10:00 — 14:00</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-cards">
-      <div class="about-card">
-        <span class="about-card-icon">🖼</span>
-        <h4>Colecciones Permanentes</h4>
-        <p>Más de 1.200 obras que abarcan pintura, escultura, fotografía y arte digital colombiano.</p>
-      </div>
-      <div class="about-card">
-        <span class="about-card-icon">✦</span>
-        <h4>Exposiciones Temporales</h4>
-        <p>Un programa dinámico con 8 exposiciones rotativas al año, nacionales e internacionales.</p>
-      </div>
-      <div class="about-card">
-        <span class="about-card-icon">◎</span>
-        <h4>Educación y Talleres</h4>
-        <p>Programas para niños, jóvenes y adultos. Arte como puerta de entrada al pensamiento crítico.</p>
-      </div>
-      <div class="about-card">
-        <span class="about-card-icon">⬡</span>
-        <h4>Residencias Artísticas</h4>
-        <p>Apoyamos artistas emergentes con nuestro programa de residencias en Barranquilla.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DESCARGAR APP -->
-<section id="descargar">
-  <div class="app-section-inner">
-    <div class="app-mockup fade-up">
-      <div class="phone-back"></div>
-      <div class="phone-back-2"></div>
-      <div class="phone-frame">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="phone-logo">Museo<br>MAMB</div>
-          <div class="phone-logo-sub">Arte Moderno · Barranquilla</div>
-          <div class="phone-divider"></div>
-          <div class="phone-ui-elem"></div>
-          <div class="phone-ui-elem" style="height:80px;"></div>
-          <div class="phone-ui-sm"></div>
-          <div class="phone-ui-elem" style="height:44px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-info fade-up">
-      <div class="section-label">Descarga la App</div>
-      <h2 class="section-title">El museo en<br>la palma de<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--accent);">tu mano</em></h2>
-      <p class="app-desc">
-        Lleva el MAMB contigo a todas partes. Explora la colección completa, lee sobre cada obra, escucha audioguías de los artistas y planifica tu próxima visita desde tu teléfono.
-      </p>
-      <ul class="app-features">
-        <li>Audioguías narradas por los propios artistas</li>
-        <li>Colección completa con más de 1.200 obras</li>
-        <li>Agenda de exposiciones y eventos en tiempo real</li>
-        <li>Compra de entradas y visitas guiadas</li>
-        <li>Contenido exclusivo y detrás de cámaras</li>
-      </ul>
-
-      <div class="store-buttons">
-        <a href="#" class="store-btn">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.27-2.16 3.8.02 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-          </svg>
-          <div class="store-btn-text">
-            <small>Descargar en</small>
-            <strong>App Store</strong>
-          </div>
-        </a>
-
-        <a href="#" class="store-btn">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.18 23.76c.3.17.66.2 1 .08l12.1-6.97-2.56-2.56zm15.9-10.64L16.44 11.5 13.6 14.33l2.79 2.79 2.7-1.55a1.5 1.5 0 0 0 0-2.45zM3 1.15A1.5 1.5 0 0 0 2.5 2.4v19.2a1.5 1.5 0 0 0 .5 1.15l.09.08 10.76-10.76v-.24zm10.56 9.42L3.09.48A1.5 1.5 0 0 0 3 .57l.06.06 10.5 10.5z" fill-rule="evenodd"/>
-          </svg>
-          <div class="store-btn-text">
-            <small>Disponible en</small>
-            <strong>Google Play</strong>
-          </div>
         </a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#inicio" class="nav-logo">MAMB <span class="badge" style="border-color:rgba(196,168,130,0.35);color:var(--brown-light);">Barranquilla</span></a>
-      <p>Calle 34 #43-31, El Prado<br>Barranquilla, Colombia<br>+57 (5) 379-3888</p>
-    </div>
-    <div class="footer-col">
-      <h5>Museo</h5>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#artista">Artista Destacado</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#about">Sobre el MAMB</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Visita</h5>
-      <ul>
-        <li><a href="#">Entradas</a></li>
-        <li><a href="#">Grupos</a></li>
-        <li><a href="#">Educación</a></li>
-        <li><a href="#">Tienda</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>App</h5>
-      <ul>
-        <li><a href="#descargar">Descargar App</a></li>
-        <li><a href="#">Audioguías</a></li>
-        <li><a href="#">Colección Digital</a></li>
-        <li><a href="#">Contáctenos</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2025 Museo de Arte Moderno de Barranquilla. Todos los derechos reservados.</span>
-    <span>Barranquilla, Colombia · Arte · Cultura · Identidad</span>
-  </div>
-</footer>
+    <div class="hero-right">
+      <div class="hero-art-grid">
+        <div class="art-panel art-p1">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#7A5030 0%,#4A2E10 100%);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 80 80" width="60" fill="rgba(250,247,242,0.15)"><rect x="10" y="10" width="60" height="60" rx="2"/><circle cx="30" cy="30" r="10"/><path d="M10 55 L30 35 L50 50 L65 38 L70 45 V70 H10Z"/></svg>
+          </div>
+        </div>
+        <div class="art-panel art-p2">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#5A3C1C 0%,#9A7040 100%);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 80 80" width="55" fill="rgba(250,247,242,0.12)"><polygon points="40,5 75,65 5,65"/><circle cx="40" cy="42" r="12" fill="none" stroke="rgba(250,247,242,0.2)" stroke-width="2"/></svg>
+          </div>
+        </div>
+        <div class="art-panel art-p3">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#8B6035 0%,#3E2810 100%);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 80 80" width="55" fill="rgba(250,247,242,0.12)"><rect x="5" y="5" width="70" height="70" rx="35"/><path d="M20 40 Q40 15 60 40 Q40 65 20 40Z" fill="rgba(250,247,242,0.1)"/></svg>
+          </div>
+        </div>
+        <div class="art-panel art-p4">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#3C2408 0%,#7A5828 100%);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 80 80" width="55" fill="none" stroke="rgba(250,247,242,0.15)" stroke-width="2"><line x1="10" y1="40" x2="70" y2="40"/><line x1="40" y1="10" x2="40" y2="70"/><circle cx="40" cy="40" r="25"/><circle cx="40" cy="40" r="12"/></svg>
+          </div>
+        </div>
+      </div>
 
-<script>
-  const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-  });
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">1.200+</span>
+          <span class="stat-label">Obras</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">38</span>
+          <span class="stat-label">Artistas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1969</span>
+          <span class="stat-label">Fundado</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        const siblings = e.target.parentElement?.querySelectorAll('.fade-up');
-        if (siblings) {
-          siblings.forEach((el, i) => {
-            setTimeout(() => el.classList.add('visible'), i * 120);
-          });
-        }
-      }
+  <section id="artista">
+    <div class="section-label fade-up">Artista Destacado</div>
+    <h2 class="section-title fade-up">La voz del Caribe<br>en el lienzo</h2>
+
+    <div class="artist-layout fade-up">
+      <div class="artist-portrait">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="30" r="22" fill="rgba(250,247,242,0.3)"/>
+              <ellipse cx="40" cy="80" rx="35" ry="28" fill="rgba(250,247,242,0.3)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="portrait-name-overlay">
+          <h3>Alejandra Mora</h3>
+          <span>Pintura · Escultura · Barranquilla</span>
+        </div>
+        <div class="accent-block"></div>
+      </div>
+
+      <div class="artist-info">
+        <blockquote class="artist-quote">
+          "El Caribe no es solo un lugar geográfico — es un estado del alma que habita en cada trazo."
+        </blockquote>
+        <p class="artist-bio">
+          Reconocida como una de las voces más originales del arte contemporáneo colombiano, Alejandra Mora crea obras que tejen identidad caribeña con abstracción moderna. Sus piezas han viajado por museos de Bogotá, Miami y São Paulo, pero siempre regresan a las raíces de la ciudad que las inspiró.
+        </p>
+        <p class="artist-bio">
+          La exposición actual presenta 24 obras inéditas creadas durante su residencia en el MAMB, explorando la relación entre el agua, el color y la memoria colectiva de la costa atlántica colombiana.
+        </p>
+        <div class="artist-tags">
+          <span class="tag">Abstracción</span>
+          <span class="tag">Arte Caribeño</span>
+          <span class="tag">Identidad</span>
+          <span class="tag">Técnica Mixta</span>
+          <span class="tag">2025</span>
+        </div>
+        <a href="#" class="btn-primary">Ver Exposición Completa</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" style="padding-top:0;background:var(--white);">
+    <div style="padding:6rem 5rem 0;">
+      <div class="section-label fade-up">Galería</div>
+      <h2 class="section-title fade-up">Explorar la colección</h2>
+    </div>
+    <div style="padding:0 5rem 6rem;">
+      <div class="gallery-grid fade-up">
+        <div class="g-cell">
+          <div class="g-bg g-bg-1">I</div>
+          <div class="g-overlay"><span>Serie Atlántico · 2024</span></div>
+        </div>
+        <div class="g-cell">
+          <div class="g-bg g-bg-2">II</div>
+          <div class="g-overlay"><span>Raíces · 2023</span></div>
+        </div>
+        <div class="g-cell">
+          <div class="g-bg g-bg-3">III</div>
+          <div class="g-overlay"><span>Memoria Viva · 2022</span></div>
+        </div>
+        <div class="g-cell">
+          <div class="g-bg g-bg-4">IV</div>
+          <div class="g-overlay"><span>Movimiento · 2024</span></div>
+        </div>
+        <div class="g-cell">
+          <div class="g-bg g-bg-5">V</div>
+          <div class="g-overlay"><span>Permanencia · 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-label fade-up">About · Nosotros</div>
+    <h2 class="section-title fade-up">Un siglo de arte<br>y cultura viva</h2>
+
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <p>
+          El Museo de Arte Moderno de Barranquilla nació en 1969 con una misión clara: ser el hogar del arte moderno y contemporáneo en la Costa Caribe colombiana. Desde sus salas conviven obras de maestros nacionales e internacionales con propuestas emergentes de nuevas generaciones de artistas.
+        </p>
+        <p>
+          Ubicados en el corazón cultural de Barranquilla, somos un punto de encuentro entre la tradición y la vanguardia, entre lo local y lo universal. Cada visita es una invitación a reimaginar el mundo desde la perspectiva del arte.
+        </p>
+        <p>
+          Nuestros programas educativos, talleres y eventos conectan a más de 80.000 personas al año con el arte como herramienta de transformación social y cultural.
+        </p>
+
+        <div class="schedule-grid">
+          <div class="schedule-item">
+            <div class="sch-day">Mar — Vie</div>
+            <div class="sch-time">9:00 — 17:00</div>
+          </div>
+          <div class="schedule-item">
+            <div class="sch-day">Sábado</div>
+            <div class="sch-time">10:00 — 18:00</div>
+          </div>
+          <div class="schedule-item">
+            <div class="sch-day">Domingo</div>
+            <div class="sch-time">10:00 — 14:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <span class="about-card-icon">🖼</span>
+          <h4>Colecciones Permanentes</h4>
+          <p>Más de 1.200 obras que abarcan pintura, escultura, fotografía y arte digital colombiano.</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-icon">✦</span>
+          <h4>Exposiciones Temporales</h4>
+          <p>Un programa dinámico con 8 exposiciones rotativas al año, nacionales e internacionales.</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-icon">◎</span>
+          <h4>Educación y Talleres</h4>
+          <p>Programas para niños, jóvenes y adultos. Arte como puerta de entrada al pensamiento crítico.</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-icon">⬡</span>
+          <h4>Residencias Artísticas</h4>
+          <p>Apoyamos artistas emergentes con nuestro programa de residencias en Barranquilla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="descargar">
+    <div class="app-section-inner">
+      <div class="app-mockup fade-up">
+        <div class="phone-back"></div>
+        <div class="phone-back-2"></div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-logo">Museo<br>MAMB</div>
+            <div class="phone-logo-sub">Arte Moderno · Barranquilla</div>
+            <div class="phone-divider"></div>
+            <div class="phone-ui-elem"></div>
+            <div class="phone-ui-elem" style="height:80px;"></div>
+            <div class="phone-ui-sm"></div>
+            <div class="phone-ui-elem" style="height:44px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-info fade-up">
+        <div class="section-label">Descarga la App</div>
+        <h2 class="section-title">El museo en<br>la palma de<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--accent);">tu mano</em></h2>
+        <p class="app-desc">
+          Lleva el MAMB contigo a todas partes. Explora la colección completa, lee sobre cada obra, escucha audioguías de los artistas y planifica tu próxima visita desde tu teléfono.
+        </p>
+        <ul class="app-features">
+          <li>Audioguías narradas por los propios artistas</li>
+          <li>Colección completa con más de 1.200 obras</li>
+          <li>Agenda de exposiciones y eventos en tiempo real</li>
+          <li>Compra de entradas y visitas guiadas</li>
+          <li>Contenido exclusivo y detrás de cámaras</li>
+        </ul>
+
+        <div class="store-buttons">
+          <a href="#" class="store-btn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.27-2.16 3.8.02 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <div class="store-btn-text">
+              <small>Descargar en</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+
+          <a href="#" class="store-btn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.18 23.76c.3.17.66.2 1 .08l12.1-6.97-2.56-2.56zm15.9-10.64L16.44 11.5 13.6 14.33l2.79 2.79 2.7-1.55a1.5 1.5 0 0 0 0-2.45zM3 1.15A1.5 1.5 0 0 0 2.5 2.4v19.2a1.5 1.5 0 0 0 .5 1.15l.09.08 10.76-10.76v-.24zm10.56 9.42L3.09.48A1.5 1.5 0 0 0 3 .57l.06.06 10.5 10.5z" fill-rule="evenodd"/>
+            </svg>
+            <div class="store-btn-text">
+              <small>Disponible en</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo">MAMB <span class="badge" style="border-color:rgba(196,168,130,0.35);color:var(--brown-light);">Barranquilla</span></a>
+        <p>Calle 34 #43-31, El Prado<br>Barranquilla, Colombia<br>+57 (5) 379-3888</p>
+      </div>
+      <div class="footer-col">
+        <h5>Museo</h5>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#artista">Artista Destacado</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#about">Sobre el MAMB</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visita</h5>
+        <ul>
+          <li><a href="#">Entradas</a></li>
+          <li><a href="#">Grupos</a></li>
+          <li><a href="#">Educación</a></li>
+          <li><a href="#">Tienda</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>App</h5>
+        <ul>
+          <li><a href="#descargar">Descargar App</a></li>
+          <li><a href="#">Audioguías</a></li>
+          <li><a href="#">Colección Digital</a></li>
+          <li><a href="#">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Museo de Arte Moderno de Barranquilla. Todos los derechos reservados.</span>
+      <span>Barranquilla, Colombia · Arte · Cultura · Identidad</span>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
     });
-  }, { threshold: 0.12 });
 
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          const siblings = e.target.parentElement?.querySelectorAll('.fade-up');
+          if (siblings) {
+            siblings.forEach((el, i) => {
+              setTimeout(() => el.classList.add('visible'), i * 120);
+            });
+          }
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
