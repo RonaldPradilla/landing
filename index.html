@@ -16,11 +16,21 @@
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#artista">Artista Destacado</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#descargar">Descargar</a></li>
+      <li><a href="#about">Acerca de</a></li>
     </ul>
     <a href="#descargar" class="nav-cta">Descargar App</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio" class="mobile-link">Inicio</a>
+    <a href="#artista" class="mobile-link">Artista Destacado</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#about" class="mobile-link">Acerca de</a>
+    <a href="#descargar" class="nav-cta">Descargar App</a>
+  </div>
 
   <section id="inicio">
     <div class="hero-left fade-up">
@@ -31,16 +41,6 @@
       <p class="hero-desc">
         Un espacio donde la cultura caribeña dialoga con el arte contemporáneo global. Colecciones únicas, exposiciones temporales y experiencias que perduran.
       </p>
-      <div class="hero-actions">
-        <a href="#artista" class="btn-primary">Explorar Colección</a>
-        <a href="#descargar" class="btn-ghost">
-          Descargar App
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 8h10M9 4l4 4-4 4"/>
-          </svg>
-        </a>
-      </div>
-
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num">1.200+</span>
@@ -64,12 +64,6 @@
         </div>
         <div class="art-panel art-p2">
           <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Don_Sim%C3%B3n_en_San_Pedro_Alejandrino._Alejandro_Obreg%C3%B3n.Quinta_de_San_Pedro_Alejandrino.JPG" alt="Don Simón · Alejandro Obregón" onerror="this.style.display='none'">
-        </div>
-        <div class="art-panel art-p3">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Pared_de_Obreg%C3%B3n.jpg" alt="Pared de Obregón" onerror="this.style.display='none'">
-        </div>
-        <div class="art-panel art-p4">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/MuralObregon.JPG" alt="Mural Obregón" onerror="this.style.display='none'">
         </div>
       </div>
     </div>
@@ -113,54 +107,82 @@
           <span class="tag">Periodismo</span>
           <span class="tag">1926–1972</span>
         </div>
-        <a href="#" class="btn-primary">Ver Exposición Completa</a>
       </div>
     </div>
   </section>
 
-  <section id="galeria" style="padding-top:0;background:var(--white);">
-    <div style="padding:6rem 5rem 0;">
-      <div class="section-label fade-up">Galería</div>
-      <h2 class="section-title fade-up">Explorar la colección</h2>
-    </div>
-    <div style="padding:0 5rem 6rem;">
-      <div class="gallery-grid fade-up">
-        <div class="g-cell">
-          <div class="g-bg g-bg-1">
-            <img src="https://patrimoniofilmico.org.co/wp-content/uploads/2020/04/portada-la-langosta-azul_marzo.png" alt="La langosta azul" onerror="this.style.display='none'">
+  <section id="servicios">
+    <div class="section-label fade-up">Servicios</div>
+    <h2 class="section-title fade-up">Lo que ofrecemos</h2>
+    <div class="services-carousel fade-up">
+        <div class="services-track-wrap">
+          <div class="services-track">
+            <div class="service-card">
+              <div class="service-card-img art-p1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/MuralObregon.JPG" alt="Museo MAMB" onerror="this.style.display='none'">
+              </div>
+              <div class="service-card-body">
+                <span class="service-icon">🕐</span>
+                <h3 class="service-title">Horarios</h3>
+                <div class="service-schedule">
+                  <div class="service-schedule-row">
+                    <span class="service-day">Martes — Viernes</span>
+                    <span class="service-time">10:00 am — 7:00 pm</span>
+                  </div>
+                  <div class="service-schedule-row">
+                    <span class="service-day">Sábados</span>
+                    <span class="service-time">10:00 am — 1:00 pm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-card-img art-p2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Don_Sim%C3%B3n_en_San_Pedro_Alejandrino._Alejandro_Obreg%C3%B3n.Quinta_de_San_Pedro_Alejandrino.JPG" alt="Visitas guiadas" onerror="this.style.display='none'">
+              </div>
+              <div class="service-card-body">
+                <span class="service-icon">◎</span>
+                <h3 class="service-title">Visitas Guiadas</h3>
+                <p class="service-desc">Recorre nuestras salas con guías especializados que te introducen al universo del arte moderno y contemporáneo del Caribe colombiano.</p>
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-card-img art-p3">
+                <img src="https://www.entrerios.gov.ar/cultura/wp-content/uploads/2026/05/artes-visuales-1080x675.jpg" alt="Encuentros culturales" onerror="this.style.display='none'">
+              </div>
+              <div class="service-card-body">
+                <span class="service-icon">✦</span>
+                <h3 class="service-title">Encuentros</h3>
+                <p class="service-desc">Espacios de diálogo y reflexión entre artistas, académicos y el público general en torno al arte y la cultura contemporánea.</p>
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="service-card-img art-p4">
+                <img src="https://www.fundacionmapfre.org/media/arte-cultura/arte-digital/encuentros/encuentros-1194x585-1.jpg" alt="Talleres artísticos" onerror="this.style.display='none'">
+              </div>
+              <div class="service-card-body">
+                <span class="service-icon">⬡</span>
+                <h3 class="service-title">Talleres</h3>
+                <p class="service-desc">Actividades prácticas para niños, jóvenes y adultos. Aprende técnicas artísticas y conecta con el arte desde la experiencia creativa.</p>
+              </div>
+            </div>
           </div>
-          <div class="g-overlay"><span>La langosta azul · 1954</span></div>
         </div>
-        <div class="g-cell">
-          <div class="g-bg g-bg-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/%22Violence%22_.webp" alt="Violencia · Alejandro Obregón" onerror="this.style.display='none'">
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn">&#8592;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
-          <div class="g-overlay"><span>Violencia · Alejandro Obregón · 1962</span></div>
-        </div>
-        <div class="g-cell">
-          <div class="g-bg g-bg-3">
-            <img src="https://patrimoniofilmico.org.co/wp-content/uploads/2020/04/destacada-la-langosta-azul-marzo.png" alt="La langosta azul · Playa" onerror="this.style.display='none'">
-          </div>
-          <div class="g-overlay"><span>Caribe en celuloide · 1954</span></div>
-        </div>
-        <div class="g-cell">
-          <div class="g-bg g-bg-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/MuralObregon.JPG" alt="Mural Obregón" onerror="this.style.display='none'">
-          </div>
-          <div class="g-overlay"><span>Mural Barranquilla · Obregón</span></div>
-        </div>
-        <div class="g-cell">
-          <div class="g-bg g-bg-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Pared_de_Obreg%C3%B3n.jpg" alt="Pared de Obregón" onerror="this.style.display='none'">
-          </div>
-          <div class="g-overlay"><span>Pared de Obregón · Cartagena</span></div>
+          <button class="carousel-btn" id="nextBtn">&#8594;</button>
         </div>
       </div>
-    </div>
   </section>
 
   <section id="about">
-    <div class="section-label fade-up">About · Nosotros</div>
+    <div class="section-label fade-up">Acerca de · Nosotros</div>
     <h2 class="section-title fade-up">Un siglo de arte<br>y cultura viva</h2>
 
     <div class="about-grid fade-up">
@@ -175,20 +197,6 @@
           Nuestros programas educativos, talleres y eventos conectan a más de 80.000 personas al año con el arte como herramienta de transformación social y cultural.
         </p>
 
-        <div class="schedule-grid">
-          <div class="schedule-item">
-            <div class="sch-day">Mar — Vie</div>
-            <div class="sch-time">9:00 — 17:00</div>
-          </div>
-          <div class="schedule-item">
-            <div class="sch-day">Sábado</div>
-            <div class="sch-time">10:00 — 18:00</div>
-          </div>
-          <div class="schedule-item">
-            <div class="sch-day">Domingo</div>
-            <div class="sch-time">10:00 — 14:00</div>
-          </div>
-        </div>
       </div>
 
       <div class="about-cards">
@@ -241,14 +249,6 @@
         <p class="app-desc">
           Lleva el MAMB contigo a todas partes. Explora la colección completa, lee sobre cada obra, escucha audioguías de los artistas y planifica tu próxima visita desde tu teléfono.
         </p>
-        <ul class="app-features">
-          <li>Audioguías narradas por los propios artistas</li>
-          <li>Colección completa con más de 1.200 obras</li>
-          <li>Agenda de exposiciones y eventos en tiempo real</li>
-          <li>Compra de entradas y visitas guiadas</li>
-          <li>Contenido exclusivo y detrás de cámaras</li>
-        </ul>
-
         <div class="store-buttons">
           <a href="#" class="store-btn">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -285,8 +285,8 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#artista">Artista Destacado</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#about">Sobre el MAMB</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#about">Acerca de</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -316,8 +316,25 @@
 
   <script>
     const nav = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
     });
 
     const observer = new IntersectionObserver((entries) => {
@@ -335,6 +352,59 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Carousel
+    const track = document.querySelector('.services-track');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const trackWrap = document.querySelector('.services-track-wrap');
+    let current = 0;
+    const total = 4;
+    const gapPx = 16; // 1rem en píxeles
+    
+    function updateCarousel() {
+      const cardWidth = trackWrap.offsetWidth;
+      const offset = current * (cardWidth + gapPx);
+      track.style.transform = `translateX(-${offset}px)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    prevBtn.addEventListener('click', () => {
+      current = (current - 1 + total) % total;
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      current = (current + 1) % total;
+      updateCarousel();
+    });
+
+    dots.forEach((d, i) => d.addEventListener('click', () => {
+      current = i;
+      updateCarousel();
+    }));
+
+    // Touch swipe for carousel
+    let touchStartX = 0;
+    trackWrap.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    trackWrap.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) { current = (current + 1) % total; }
+        else { current = (current - 1 + total) % total; }
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      current = 0;
+      updateCarousel();
+    });
+
+    updateCarousel();
   </script>
 </body>
 </html>
